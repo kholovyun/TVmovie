@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jQuery.js"></script>
+    <script src="https://kit.fontawesome.com/946c746045.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jquery.hislide.css">
+    <link rel="stylesheet" href="./css/smart_tab_all.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="rezka__head__container">
+                <div class="rezka__head">
+                    <div class="rezka__head__icons">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                    </div>
+                    <label id = 'day__night' class="rezka__head__switcher">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="logo__container">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <div class="rezka__head__login">
+                        <h5>LOGIN</h5>
+                        <h5>REGISTRATION</h5>
+                    </div>
+                </div>
+                <div class="rezka__head__menu">
+                    <ul class="rezka__head__list">
+                        <li class="rezka__head__list__item"><a href="#">Movies <i class="fa-solid fa-angle-down"></i> </a>
+                            <ul>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                            </ul>
+                        </li>
+                        <li class="rezka__head__list__item"><a href="#">Serials <i class="fa-solid fa-angle-down"></i></a>
+                            <ul>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                            </ul>
+                        </li>
+                        <li class="rezka__head__list__item"><a href="#">Сartoons <i class="fa-solid fa-angle-down"></i></a>
+                            <ul>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                            </ul>
+                        </li>
+                        <li class="rezka__head__list__item"><a href="#">Anime <i class="fa-solid fa-angle-down"></i></a>
+                            <ul>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                                <li>Westerns</li>
+                                <li>Action</li>
+                                <li>Adventures</li>
+                            </ul>
+                        </li>
+                        <li class="rezka__head__list__item"><a href="#">New</a></li>
+                        <li class="rezka__head__list__item"><a href="#">Announcements</a></li>
+                        <li class="rezka__head__list__item"><a href="#">Collections</a></li>
+                        <li class="rezka__head__list__item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Movie search">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="premier__news">
+                <div class="img-area hi-slide">
+                    <div class="hi-prev"></div>
+                    <div class="hi-next"></div>
+                    <ul>
+                        <li><img src="./images/premiers/bruce.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/day.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/gosts.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/groot.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/horror.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/they.jpg" alt="Movie"></li>
+                        <li><img src="./images/premiers/predator.jpg" alt="Movie"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="smarttab">
+
+                <!-- Tabs -->
+                <ul class="nav">
+                  <li>
+                    <a class="nav-link" href="#tab-1">
+                      New
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#tab-2">
+                      Popular
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#tab-3">
+                      Soon
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#tab-4">
+                      Watching now
+                    </a>
+                  </li>
+                </ul>
+              
+                <!-- Tabbed Content -->
+                <div class="tab-content">
+                  <div id="tab-1" class="tab-pane" role="tabpanel">
+                    <div id="new__movies" class="panel active">
+                    <div class="grid">
+                        <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img  src="./images/NewMovies/pic1.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic2.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic3.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic4.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic5.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic6.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic7.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic8.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic9.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic10.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic11.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic12.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic13.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic14.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic15.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/NewMovies/pic16.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                  </div>
+                  <div id="tab-2" class="tab-pane" role="tabpanel">
+                    <div id="popular__movies" class="panel active">
+                        <div class="grid">
+                            <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img  src="./images/popular/pic1.jpeg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic2.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic3.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic4.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic5.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic6.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic7.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic14.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic9.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic10.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic11.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic12.jpeg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic13.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic14.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic15.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/popular/pic16.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="tab-3" class="tab-pane" role="tabpanel">
+                    <div id="soon__movies" class="panel active">
+                        <div class="grid">
+                            <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img  src="./images/Soon/1.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="./images/Soon/2.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                  <a href="" class="project__image"><img src="images/Soon/3.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/4.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/5.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/6.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/7.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/8.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/9.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/10.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/11.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/12.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/13.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/14.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/15.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="images/Soon/16.jpg" alt="#"></a>
+                                  <div class="project__detail">
+                                    <h2 class="project__title"><a href="#">Watch</a></h2>
+                                    <small class="project__category"><a href="#">NOW</a></small>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="tab-4" class="tab-pane" role="tabpanel">
+                    
+                <div id="whatching__now" class="panel active">
+                    <div class="grid">
+                        <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img  src="./images/nowWatching/1.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/2.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/3.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/4.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/5.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/6.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/7.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/8.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/9.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/10.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/11.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/12.jpeg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/13.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/14.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/15.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project">
+                            <div class="project__card">
+                              <a href="" class="project__image"><img src="./images/nowWatching/16.jpg" alt="#"></a>
+                              <div class="project__detail">
+                                <h2 class="project__title"><a href="#">Watch</a></h2>
+                                <small class="project__category"><a href="#">NOW</a></small>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                  </div>
+                </div>
+                
+              </div>
+        </main>
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.hislide.js"></script>
+    <script src="./js/jquery.smartTab.js"></script>
+    <script src="./js/jquery.hover3d.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

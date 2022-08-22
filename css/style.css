@@ -1,0 +1,274 @@
+.rezka__head__container {
+  box-shadow: 0px 5px 5px 0px rgba(204, 204, 204, 0.7254901961);
+}
+.rezka__head__container .rezka__head {
+  display: flex;
+  justify-content: space-between;
+}
+.rezka__head__container .rezka__head__icons {
+  font-size: 25px;
+}
+.rezka__head__container .rezka__head__switcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 50px;
+}
+.rezka__head__container .rezka__head__switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.rezka__head__container .rezka__head__switcher input:checked + .slider {
+  background-color: #2196F3;
+}
+.rezka__head__container .rezka__head__switcher input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.rezka__head__container .rezka__head__switcher .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.rezka__head__container .rezka__head__switcher .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+.rezka__head__container .rezka__head__switcher .round {
+  border-radius: 34px;
+}
+.rezka__head__container .rezka__head__switcher .slider.round:before {
+  border-radius: 50%;
+}
+.rezka__head__container .rezka__head__switcher input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.rezka__head__container .rezka__head .logo__container {
+  width: 260px;
+  height: 70px;
+  margin-right: 250px;
+}
+.rezka__head__container .rezka__head .logo__container img {
+  width: 100%;
+  height: 100%;
+}
+.rezka__head__container .rezka__head__menu {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item input {
+  border: none;
+  outline: none;
+  width: 65%;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item .fa-angle-down {
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item:hover {
+  border-bottom: 1px solid black;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item:hover .fa-angle-down {
+  rotate: 180deg;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item > ul {
+  color: white;
+  width: 40%;
+  list-style: none;
+  margin: 10px;
+  background: rgba(7, 7, 7, 0.8392156863);
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 60px;
+  position: absolute;
+  border: 1px solid white;
+  text-align: left;
+  display: none;
+  z-index: 2;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item > ul li {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item > a {
+  text-decoration: none;
+  color: black;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(1), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(2), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(3), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(4) {
+  font-weight: 600;
+}
+.rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(5), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(6), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(7), .rezka__head__container .rezka__head__menu .rezka__head__list__item:nth-child(8) {
+  opacity: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  background: white;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.premier__news {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 60px;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+  top: 56%;
+  height: 46px;
+  margin-top: -40px;
+  border-radius: 50%;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-rows: repeat(auto-fill, 300px);
+  row-gap: 20px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.project {
+  width: 100%;
+  width: 100%;
+  float: left;
+  margin-right: 5%;
+}
+
+.project__image {
+  display: block;
+  position: relative;
+}
+
+.project__image img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.project__image:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.project__card {
+  position: relative;
+  will-change: transform;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px transparent;
+}
+
+.project__card.hover-in {
+  transition: transform 0.2s ease-out;
+}
+
+.project__card.hover-out {
+  transition: transform 0.2s ease-in;
+}
+
+.project:hover .project__card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project:hover .project__image:after {
+  opacity: 1;
+}
+
+.project:hover .project__detail {
+  border-width: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project:hover .project__title, .project:hover .project__category {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.project__detail {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  transform: translateZ(30px);
+  border: 0 solid #00BCD4;
+  transition: border 0.4s ease;
+}
+
+.project__title {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px) scale(0);
+  will-change: transform;
+}
+
+.project__title a {
+  color: white;
+}
+
+.project__category {
+  opacity: 0;
+  transition: 0.4s ease;
+  transition-delay: 0.1s;
+  transform: translateY(40px) scale(0);
+  will-change: transform;
+}
+
+.project__category a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3em;
+}/*# sourceMappingURL=style.css.map */

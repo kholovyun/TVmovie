@@ -1,0 +1,95 @@
+.rezka__head__container
+    box-shadow: 0px 5px 5px 0px #ccccccb9
+    .rezka__head
+        display: flex
+        justify-content: space-between
+        &__icons
+            font-size: 25px
+        &__switcher
+            position: relative
+            display: inline-block
+            width: 60px
+            height: 34px
+            margin-right: 50px
+            input
+                opacity: 0
+                width: 0
+                height: 0
+            input:checked + .slider
+                background-color: #2196F3
+            input:focus +.slider
+                box-shadow: 0 0 1px #2196F3
+            .slider
+                position: absolute
+                cursor: pointer
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background-color: #ccc
+                transition: .4s
+            .slider:before
+                position: absolute
+                content: ""
+                height: 26px
+                width: 26px
+                left: 4px
+                bottom: 4px
+                background-color: white
+                transition: .4s
+            .round
+                border-radius: 34px
+            .slider.round:before
+                border-radius: 50%
+            input:checked + .slider:before
+                transform: translateX(26px)
+        .logo__container
+            width: 260px
+            height: 70px
+            margin-right: 250px
+            img
+                width: 100%
+                height: 100%            
+    .rezka__head__menu
+        padding-bottom: 30px
+        padding-top: 30px
+        .rezka__head__list
+            display: flex
+            justify-content: space-between
+            list-style: none
+            &__item
+                input
+                    border: none
+                    outline: none
+                    width: 65%
+                .fa-angle-down
+                    transition: all 0.3s ease
+                    font-size: 13px
+            &__item:hover
+                border-bottom: 1px solid black
+                .fa-angle-down
+                    rotate: 180deg
+            &__item > ul 
+                color: white
+                width: 40%
+                list-style: none
+                margin: 10px
+                background: #070707d6
+                padding:20px
+                padding-left: 10px
+                padding-right: 60px
+                position: absolute
+                border: 1px solid white
+                text-align: left
+                display: none
+                z-index: 2
+                li
+                    margin-top: 10px
+                    font-size: 12px
+            &__item > a
+                text-decoration: none
+                color: black
+            &__item:nth-child(1),&__item:nth-child(2),&__item:nth-child(3),&__item:nth-child(4)
+                font-weight: 600
+            &__item:nth-child(5),&__item:nth-child(6),&__item:nth-child(7),&__item:nth-child(8)
+                opacity: 0.9
